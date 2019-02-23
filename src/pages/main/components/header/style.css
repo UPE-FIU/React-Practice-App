@@ -1,0 +1,8 @@
+.headerContainer{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+.headerContainer h1 {
+    color:yellow;
+}

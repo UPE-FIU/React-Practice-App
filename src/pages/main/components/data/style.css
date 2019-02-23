@@ -1,0 +1,12 @@
+.dataContainer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius:5%;
+    width:27%;
+    margin-top: 15px;
+}
