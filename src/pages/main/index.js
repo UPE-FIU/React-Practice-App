@@ -17,6 +17,8 @@ class Main extends Component {
     }
   }
 
+  //added function to call here
+
   async componentDidMount(){
     let {data} = await axios.get('https://swapi.co/api/starships/');
     let {results} = data;
@@ -25,15 +27,7 @@ class Main extends Component {
     this.loadStarships();
   }
 
-//   let loadStarships = <div>
-//         {
-//         this.state.data.forEach(data => {
-//             const{name,length,passengers} = data;
-//             return (<Data name={name} length={length} passengers={passengers}/>)
-//           })
-         
-//       }
-//     </div>
+  //add components to an array
 
 loadStarships = () =>{
   let displayarr = [];
@@ -45,6 +39,7 @@ loadStarships = () =>{
     this.setState({display:displayarr})
   }
 
+  //load array in render instead
 
   render() {
     if(this.state.display)
